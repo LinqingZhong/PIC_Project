@@ -1,0 +1,25 @@
+Loading model...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [01:23<04:10, 83.64s/it]Loading checkpoint shards:  50%|█████     | 2/4 [02:49<02:49, 84.80s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [04:13<01:24, 84.50s/it]Loading checkpoint shards: 100%|██████████| 4/4 [04:32<00:00, 58.67s/it]Loading checkpoint shards: 100%|██████████| 4/4 [04:32<00:00, 68.12s/it]
+Model loaded!
+Hosting on port 12181...
+ * Serving Flask app 'server_wrapper'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://115.25.142.41:12181
+[33mPress CTRL+C to quit[0m
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+10.192.233.203 - - [17/Mar/2025 05:41:57] "POST /llama HTTP/1.1" 200 -
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+10.192.233.203 - - [17/Mar/2025 05:43:10] "POST /llama HTTP/1.1" 200 -
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+10.193.157.49 - - [17/Mar/2025 05:43:26] "POST /llama HTTP/1.1" 200 -
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+10.193.157.49 - - [17/Mar/2025 05:44:12] "POST /llama HTTP/1.1" 200 -
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+10.192.233.203 - - [17/Mar/2025 05:44:49] "POST /llama HTTP/1.1" 200 -
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+10.192.233.203 - - [17/Mar/2025 05:45:01] "POST /llama HTTP/1.1" 200 -
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+10.192.233.203 - - [17/Mar/2025 05:46:34] "POST /llama HTTP/1.1" 200 -
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+10.192.233.203 - - [17/Mar/2025 05:47:11] "POST /llama HTTP/1.1" 200 -

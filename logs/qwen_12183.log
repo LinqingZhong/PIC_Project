@@ -1,0 +1,13 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+Loading model...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.18it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:02,  1.01s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.06s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.03s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.02s/it]
+Model loaded!
+Hosting on port 12183...
+ * Serving Flask app 'server_wrapper'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://115.25.142.41:12183
+[33mPress CTRL+C to quit[0m
+10.192.205.106 - - [17/Mar/2025 08:30:17] "POST /qwen HTTP/1.1" 200 -
+10.192.205.106 - - [17/Mar/2025 08:31:55] "POST /qwen HTTP/1.1" 200 -
+10.192.205.106 - - [17/Mar/2025 08:32:40] "POST /qwen HTTP/1.1" 200 -
