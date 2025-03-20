@@ -10,7 +10,25 @@
 Coming soon
 
 ## Installation
+If you are unable to access the GitHub website, you can open the hosts file with Notepad at <span style="color:blue">`C:\Windows\System32\drivers\etc\hosts`</span> (for Android system) or at <span style="color:blue">`etc/hosts`</span> (for Linux/Mac). At the end of the file, add the following lines:  
+```bash
+20.205.243.166 github.com  
+20.205.243.166 www.github.com  
+20.205.243.166 api.github.com  
+20.205.243.166 assets-cdn.github.com  
+20.205.243.166 raw.githubusercontent.com  
+20.205.243.166 gist.github.com  
+```
+After saving and closing the file, refresh the DNS cache by opening the terminal and running:
 
+For Windows:
+```bash
+ipconfig /flushdns  
+```
+For Linux/Mac:
+```bash
+sudo systemd-resolve --flush-caches  
+```
 Create the conda environment. We recommend using different conda environments to avoid conflicts, such as "internlm", "llama" and "qwen".
 Here is an example.
 ```bash
@@ -22,7 +40,7 @@ After setting up the environment, some packages are necessary to be installed. W
 
 ```bash
 cd PIC_Project
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 Then, download the model checkpoints using the command . Make sure that you have suffient hard drive space.
 ```bash
@@ -36,7 +54,8 @@ We provide two ways to conduct LLMs' reasoning, i.e., online inference and API c
 Change the graphics card number and python file to utilize different models.
 ```bash
 cd inference
-CUDA_VISIBLE_DEVICES=0 python llama_online.py
+CUDA_VISIBLE_DEVICES=0
+python llama_online.py
 ```
 
 ### API call

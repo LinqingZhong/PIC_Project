@@ -1,6 +1,6 @@
 torch # according to your cuda version
 torchvision
-json
+# json
 opencv-python
 flask
 transformers # just for reference, 4.48.0 for internlm,  4.50.0 for qwen and 4.43.1 for llama
