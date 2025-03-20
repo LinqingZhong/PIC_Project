@@ -4,7 +4,7 @@ import torch
 
 class Llama3_1(object):
     
-    def __init__(self, model_path="/mnt/data4/zlq/pkgs/llama-3.1-8B"):
+    def __init__(self, model_path="../ckpts/llama-3.1-8B"):
         self.model = transformers.pipeline(
             "text-generation",
             model=model_path,

@@ -13,7 +13,7 @@ print(f"Loading the model {model_name}......")
 
 model = transformers.pipeline(
     "text-generation",
-    model="/mnt/data4/zlq/pkgs/llama-3.1-8B",
+    model="../ckpts/llama-3.1-8B",
     model_kwargs={"torch_dtype": torch.bfloat16},
     device_map="auto",
     # flash_attn = False

@@ -11,11 +11,11 @@ print(f"The model that will be loaded is {model_name}.")
 print(f"Loading the model {model_name}......")
 
 model = AutoModelForCausalLM.from_pretrained(
-    "/mnt/data4/zlq/pkgs/Qwen2.5-7B",
+    "../ckpts/Qwen2.5-7B",
     torch_dtype="auto",
     device_map="auto"
 )
-tokenizer = AutoTokenizer.from_pretrained("/mnt/data4/zlq/pkgs/Qwen2.5-7B")
+tokenizer = AutoTokenizer.from_pretrained("../ckpts/Qwen2.5-7B")
 
 system_prompt = ""
 while True:

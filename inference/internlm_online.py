@@ -16,9 +16,9 @@ while model_name not in model_list:
         print("Invalid model name. Re-enter.")
 
 if model_list.index(model_name) == 0:
-    model_dir = "/mnt/data4/zlq/pkgs/internlm-3-8B"
+    model_dir = "../ckpts/internlm-3-8B"
 else:
-    model_dir = "/mnt/data4/zlq/pkgs/internlm-2_5-7B"
+    model_dir = "../ckpts/internlm-2_5-7B"
 print(f"Loading the model {model_name}......")
 tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(model_dir, trust_remote_code=True, torch_dtype=torch.bfloat16).cuda()

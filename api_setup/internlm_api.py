@@ -6,8 +6,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 class Internlm(object):
     
-    # def __init__(self, model_path="/mnt/data4/zlq/pkgs/internlm-2_5-7B"):
-    def __init__(self, model_path="/mnt/data4/zlq/pkgs/internlm-3-8B"):
+    # def __init__(self, model_path="../ckpts/internlm-2_5-7B"):
+    def __init__(self, model_path="../ckpts/internlm-3-8B"):
         self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
         self.model = AutoModelForCausalLM.from_pretrained(model_path, trust_remote_code=True, torch_dtype=torch.bfloat16).cuda()
         self.model = self.model.eval()

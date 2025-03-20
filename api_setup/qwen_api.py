@@ -6,7 +6,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 class Qwen2_5(object):
     
-    def __init__(self, model_path="/mnt/data4/zlq/pkgs/Qwen2.5-7B"):
+    def __init__(self, model_path="../ckpts/Qwen2.5-7B"):
         self.model = AutoModelForCausalLM.from_pretrained(
             model_path,
             torch_dtype="auto",
