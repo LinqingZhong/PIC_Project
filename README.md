@@ -47,7 +47,7 @@ bash llama_api.sh
 ```
 Subsequently, use the conmand below to start your chat.
 ```bash
-cd inferencen
+cd inference
 python llama_offline.py
 ```
 
