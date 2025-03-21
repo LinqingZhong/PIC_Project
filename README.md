@@ -42,7 +42,7 @@ After setting up the environment, some packages are necessary to be installed. W
 cd PIC_Project
 pip install -r requirements.txt
 ```
-Then, download the model checkpoints using the command . Make sure that you have suffient hard drive space.
+Then, download the model checkpoints using the command . Make sure that you have suffient hard drive space. (Ensure that the path to the downloaded model contains only English characters.)
 ```bash
 python download.py
 ```
@@ -59,7 +59,7 @@ python llama_online.py
 ```
 
 ### API call
-You should suspend the API service. This process may take ~30 seconds. Check whether the API service is successfully started in the corresponding log file in the "PIC_Project/log" folder.
+You should suspend the API service. This process may take ~30 seconds. Check whether the API service is successfully started in the corresponding log file in the "PIC_Project/log" folder.(Ensure that the server IP address of the computer has been modified.)
 ```bash
 cd api_setup
 bash llama_api.sh
