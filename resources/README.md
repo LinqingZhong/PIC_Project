@@ -81,7 +81,7 @@ Graph Schema:
 Reference Documents:
 Geothermal power generation does have some associated greenhouse gas emissions- which depend on the type of plant
 ...
-
+```
 ---
 
 
