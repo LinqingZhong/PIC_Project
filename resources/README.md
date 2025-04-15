@@ -65,6 +65,7 @@ python rag_inference_example.py
 Graph Schema:
 (:地热能)-[:是]->(:来自地球深处的热能)
 (:地热能不但)-[:是]->(:一种清洁能源)
+
 ...
 Reference Documents:
 无论是地震还是火山爆发，都是地下能量的释放过程。地球内部的总热能量约为地球上全部煤炭储量的1.7亿倍
