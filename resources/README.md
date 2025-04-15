@@ -9,8 +9,8 @@ This repository contains a modular Retrieval-Augmented Generation (RAG) system t
 ```
 .
 ├── rag_retriever.py              # English knowledge retriever using all-MiniLM-L6-v2
-├── rag_retriever_bert.py # Chinese retriever based on BERT-Chinese
-├── schema_retriever.py   # Graph schema retriever using all-MiniLM-L6-v2
+├── rag_retriever_bert.py         # Chinese retriever based on BERT-Chinese
+├── schema_retriever.py           # Graph schema retriever using all-MiniLM-L6-v2
 ├── rag_inference_example.py      # Full pipeline: question → schema + context → LLM output
 ├── resources/
 │   ├── faiss_index_en/           # English FAISS index & docs.json
