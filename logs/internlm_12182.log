@@ -1,5 +1,6 @@
 Loading model...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  6.47it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  6.93it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  6.85it/s]
+cuda:0
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:00,  7.18it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:00<00:00,  7.93it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:00<00:00,  7.93it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:00<00:00,  8.00it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:00<00:00,  8.16it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:00<00:00,  8.19it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:00<00:00,  8.25it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:00<00:00,  8.25it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:00<00:00,  8.12it/s]
 Model loaded!
 Hosting on port 12182...
  * Serving Flask app 'server_wrapper'
@@ -12,4 +13,5 @@ Hosting on port 12182...
 /mnt/data4/zlq/anaconda3/envs/internlm/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `40` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
   warnings.warn(
 The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
-115.25.142.41 - - [16/Mar/2025 16:35:06] "POST /internlm HTTP/1.1" 200 -
+115.25.142.41 - - [29/May/2025 02:40:21] "POST /internlm HTTP/1.1" 200 -
+115.25.142.41 - - [29/May/2025 02:40:53] "POST /internlm HTTP/1.1" 200 -

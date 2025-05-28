@@ -112,7 +112,7 @@ def _send_request(url: str, **kwargs: Any) -> dict:
     return result
 
 class InternlmClient:
-    def __init__(self, port: int = 12182, IP = None):
+    def __init__(self, port: int = 12183, IP = None):
         if IP == None:
             self.url = f"http://localhost:{port}/internlm"
         else:

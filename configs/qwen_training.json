@@ -1,0 +1,38 @@
+{
+    "root_dir": "/home/zlq/PIC/exps",
+    "model_type": "qwen",
+    "model_name_or_path": "/mnt/data4/zlq/pkgs/Qwen2.5-7B",
+    "freeze_embedding": true,
+    "metrics": ["bleu", "meteor", "rouge"],
+    "data_config":{
+        "max_length":4096,
+        "system_prompt": "You are ChatBot developped by six students from ECPK.",
+        "instruction_prompt": "You are an expert in the energy field and are familiar with various petrochemical knowledge. You need to answer the following question: ",
+        "training_json_path": "/mnt/data4/zlq/PIC_Project/data/SFT_Dataset.json",
+        "eval_json_path": "/mnt/data4/zlq/PIC_Project/data/SFT_Dataset.json"
+    },
+    "lora_config":{
+        "r": 64,
+        "lora_alpha": 16,
+        "dropout": 0.1,
+        "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+    },
+    "training_config": {
+        "run_name": "qwen2.5_sft",
+        "overwrite_output_dir": true,
+        "num_train_epochs": 3,
+        "per_device_train_batch_size": 2,
+        "per_device_eval_batch_size": 2,
+        "gradient_accumulation_steps": 4,
+        "evaluation_strategy": "steps",
+        "save_strategy": "steps",
+        "logging_steps": 10,
+        "eval_steps": 100,
+        "save_steps": 100,
+        "learning_rate": 5e-5,
+        "lr_scheduler_type": "cosine",
+        "warmup_ratio": 0.1,
+        "weight_decay": 0.01,
+        "bf16": true
+    }
+}

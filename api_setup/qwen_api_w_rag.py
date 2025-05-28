@@ -1,8 +1,9 @@
-from server_wrapper import ServerMixin, host_model, send_request, str_to_image
-
+import sys
+sys.path.append("/mnt/data4/zlq/PIC_Project/resources")
 import torch
+from rag_inference_example import get_rag_context
 from transformers import AutoTokenizer, AutoModelForCausalLM
-
+from server_wrapper import ServerMixin, host_model, send_request, str_to_image
 
 class Qwen2_5(object):
     
@@ -15,7 +16,11 @@ class Qwen2_5(object):
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
 
     def predict(self, prompt):
+        
+        context = get_rag_context(prompt)
         system_prompt = "You are an assistant named ChatBot built from Qwen 2.5, which is expert in the energy field. You are developped by six students from ECPK in Beihang University."
+        prompt = f"You need to answer carefully my following question. Here is the context that you can refer to: {context}.\n" + prompt
+        
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt},

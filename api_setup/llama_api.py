@@ -4,7 +4,7 @@ import torch
 
 class Llama3_1(object):
     
-    def __init__(self, model_path="../ckpts/llama-3.1-8B"):
+    def __init__(self, model_path="../../pkgs/llama-3.1-8B"):
         self.model = transformers.pipeline(
             "text-generation",
             model=model_path,
@@ -15,8 +15,9 @@ class Llama3_1(object):
 
     def predict(self, prompt):
 
+        system_prompt = "You are an assistant named ChatBot built llama 3.1, which is expert in the energy field. You are developped by six students from ECPK (ecole centrale de pekin) in Beihang University."
         messages = [
-            {"role": "system", "content": "You are an intelligent assistant whose name is Llama-3.1. You need to answer question carefully."},
+            {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt},
         ]
 

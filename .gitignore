@@ -1,1 +1,13 @@
 logs/
+*.pyc
+*.log
+*debug
+experiments/
+models_finetuned/
+tools/*.json
+config.yaml
+lora_*
+*.pyc
+data/*_backup.json
+data/*_CN.json
+lockfiles/*

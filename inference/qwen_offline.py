@@ -113,7 +113,7 @@ def _send_request(url: str, **kwargs: Any) -> dict:
 
 
 class QwenClient:
-    def __init__(self, port: int = 12183, IP = None):
+    def __init__(self, port: int = 12184, IP = None):
         if IP == None:
             self.url = f"http://localhost:{port}/qwen"
         else:
@@ -125,7 +125,7 @@ class QwenClient:
 
 if __name__ == "__main__":
 
-    llm_client = QwenClient(12183, IP="115.25.142.41")  # change the ip according to your computer
+    llm_client = QwenClient(12185, IP="115.25.142.41")  # change the ip according to your computer
 
     while True:
         prompt = input("\nPlease answer your question, enter 'quit' to leave:")
